@@ -1,11 +1,22 @@
 // Utility Logic
 // Business Logic
-function beepBoop(num) {
-  numHolderArray = [];
+function rangeOfNumbers(num) {
+  let zeroArray = [];
   if (num === 0) {
-    numHolderArray.push(num);
+    zeroArray.push(num);
   }
-  console.log(numHolderArray, "numHolderArray");
+  const arrayRange = (start, stop, step) =>
+    Array.from(
+    { length: (stop - start) / step + 1 },
+    (value, index) => start + index * step
+    );
+  let range = arrayRange(1, num, 1);
+  return range;
 }
-beepBoop(0);
+
+function beepBoop() {
+  
+}
+
+rangeOfNumbers(0);
 //UI Logic
