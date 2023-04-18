@@ -1,22 +1,32 @@
 // Utility Logic
 // Business Logic
 function rangeOfNumbers(num) {
-  let zeroArray = [];
-  if (num === 0) {
-    zeroArray.push(num);
-  }
   const arrayRange = (start, stop, step) =>
     Array.from(
     { length: (stop - start) / step + 1 },
     (value, index) => start + index * step
     );
-  let range = arrayRange(1, num, 1);
-  return range;
+  let numberRange = arrayRange(1, num, 1);
+  return numberRange;
 }
 
-function beepBoop() {
-  
+function beepBoop(num) {
+  const numRange = rangeOfNumbers(num);
+  let resultArray = [];
+  if (num === 0) {
+    resultArray.push(num);
+  }
+  for (let i = 0; i <= numRange.length - 1; i++) {
+    if (numRange[i].includes(1)) {
+      resultArray.push("Beep!");
+    } else if (numRange[i] === 2) {
+      resultArray.push("Boop!");
+    } else {
+      resultArray.push(numRange[i]);
+    }
+  }
+  console.log(resultArray, "resultArray3");
 }
 
-rangeOfNumbers(0);
+beepBoop(96);
 //UI Logic
