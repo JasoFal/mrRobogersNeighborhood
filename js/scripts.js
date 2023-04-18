@@ -11,15 +11,16 @@ function rangeOfNumbers(num) {
 }
 
 function beepBoop(num) {
-  const numRange = rangeOfNumbers(num);
+  const numRange = rangeOfNumbers(num).toString().split(",");
+  console.log(numRange, "numRange");
   let resultArray = [];
-  if (num === 0) {
+  if (num == 0) {
     resultArray.push(num);
   }
   for (let i = 0; i <= numRange.length - 1; i++) {
-    if (numRange[i].includes(1)) {
+    if (numRange[i].includes("1")) {
       resultArray.push("Beep!");
-    } else if (numRange[i] === 2) {
+    } else if (numRange[i].includes("2")) {
       resultArray.push("Boop!");
     } else {
       resultArray.push(numRange[i]);
