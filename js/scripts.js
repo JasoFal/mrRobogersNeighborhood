@@ -22,6 +22,8 @@ function beepBoop(num) {
       resultArray.push("Beep!");
     } else if (numRange[i].includes("2")) {
       resultArray.push("Boop!");
+    } else if (numRange[i].includes("3")) {
+      resultArray.push("Won't you be my neighbor?")
     } else {
       resultArray.push(numRange[i]);
     }
@@ -29,5 +31,5 @@ function beepBoop(num) {
   console.log(resultArray, "resultArray3");
 }
 
-beepBoop(96);
+beepBoop(50);
 //UI Logic
