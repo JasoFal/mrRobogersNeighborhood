@@ -18,6 +18,10 @@ Test: "If a number within rangeOfNumbers contains a 2 replace all digits with 'B
 Code: beepBoop(2);
 Expected Output: [ "Boop!" ]
 
-Test: ""If a number within rangeOfNumbers contains a 3 replace all digits with 'Won't you be my neighbor?'"
+Test: "If a number within rangeOfNumbers contains a 3 replace all digits with 'Won't you be my neighbor?'"
 Code: beepBoop(3);
-Expected Output: [ "Won't you be my neighbor?" ]; 
+Expected Output: [ "Won't you be my neighbor?" ];
+
+Test: "It should apply the previous tests in order of 3, 2, 1"
+Code: beepBoop(13);
+Expected Output: [ "Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, Won't you be my neighbor?" ]

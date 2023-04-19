@@ -18,18 +18,17 @@ function beepBoop(num) {
     resultArray.push(num);
   }
   for (let i = 0; i <= numRange.length - 1; i++) {
-    if (numRange[i].includes("1")) {
-      resultArray.push("Beep!");
+    if (numRange[i].includes("3")) {
+      resultArray.push("Won't you be my neighbor?");
     } else if (numRange[i].includes("2")) {
       resultArray.push("Boop!");
-    } else if (numRange[i].includes("3")) {
-      resultArray.push("Won't you be my neighbor?")
+    } else if (numRange[i].includes("1")) {
+      resultArray.push("Beep!")
     } else {
       resultArray.push(numRange[i]);
     }
   }
   console.log(resultArray, "resultArray3");
 }
-
-beepBoop(50);
+beepBoop(13);
 //UI Logic
