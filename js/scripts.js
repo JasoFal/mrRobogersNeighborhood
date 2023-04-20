@@ -12,7 +12,6 @@ function rangeOfNumbers(num) {
 
 function beepBoop(num) {
   const numRange = rangeOfNumbers(num).toString().split(",");
-  console.log(numRange, "numRange");
   let resultArray = [];
   if (num == 0) {
     resultArray.push(num);
@@ -28,7 +27,17 @@ function beepBoop(num) {
       resultArray.push(numRange[i]);
     }
   }
-  console.log(resultArray, "resultArray3");
+  return resultArray;
 }
-beepBoop(13);
-//UI Logic
+// beepBoop(32);
+// UI Logic
+function handleFormSubmission(event) {
+  event.preventDefault();
+  const numInput = document.getElementById("typeNumber").value;
+  const mrRobogerNum = beepBoop(numInput);
+  document.querySelector("p#neighborResult").innerText = mrRobogerNum;
+}
+
+window.addEventListener("load", function() {
+  this.document.querySelector("form#userInputs").addEventListener("submit", handleFormSubmission);
+});
