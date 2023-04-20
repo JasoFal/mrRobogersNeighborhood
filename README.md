@@ -28,7 +28,7 @@ _A Fidgetech project created in order to prove sufficient knowledge of arrays an
 * _Use command start index.html if in Git Bash._
 * _In file explorer click on index.html._
 ------
-* Alternatively visit this *[link](https://jasofal.github.io/mrRobogersNeighborhood/)*
+* Alternatively visit this *[link](https://jasofal.github.io/mrRobogersNeighborhood/)* to view the website on gh-pages.
 
 ## Known Bugs
 
