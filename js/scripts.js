@@ -22,14 +22,13 @@ function beepBoop(num) {
     } else if (numRange[i].includes("2")) {
       resultArray.push("Boop!");
     } else if (numRange[i].includes("1")) {
-      resultArray.push("Beep!")
+      resultArray.push("Beep!");
     } else {
       resultArray.push(numRange[i]);
     }
   }
   return resultArray;
 }
-// beepBoop(32);
 // UI Logic
 function handleFormSubmission(event) {
   event.preventDefault();
